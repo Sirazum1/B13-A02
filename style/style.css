@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #140228;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #140228; 
+    position: relative;
+}
+.navbar-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: transparent; 
+    background: linear-gradient(45deg, #f9b016, #d4006d, #5c2188); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    display: inline-block;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.nav-button .subscribe-btn {
+    background: linear-gradient(45deg, #f9b016, #d4006d, #5c2188); 
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 200;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.nav-button .subscribe-btn:hover {
+    background: linear-gradient(45deg,#f9b016, #d4006d, #5c2188); 
+    opacity: 0.9; 
+ transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.nav-button .subscribe-btn span {
+    margin-left: 8px;
+}
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu img {
+    width: 15px;
+    height: 15px;
+}
+@media screen and (max-width: 576px) {
+    .nav-links {
+        display: none; 
+    }
+    .hamburger-menu {
+        display: block; 
+    }
+    .navbar-line {
+            width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1); 
+   
+    }
+
+    .logo-container {
+        flex: 1; 
+    }
+    .logo {
+        font-size: 20px; 
+    }
+    .nav-button .subscribe-btn {
+        display: none; 
+    }
+}
+@media screen and (min-width: 577px) {
+    .hamburger-menu {
+        display: none; 
+    }
+}
